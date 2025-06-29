@@ -3,3 +3,96 @@
 body {
   @apply font-sans;
 }
+
+
+@import "tailwindcss";
+
+body {
+  @apply font-sans text-gray-900 leading-relaxed;
+}
+
+/* Custom prose styles for better typography */
+.prose {
+  @apply text-base leading-7;
+}
+
+.prose p {
+  @apply mb-4 text-gray-700;
+}
+
+.prose h1 {
+  @apply text-3xl font-bold text-gray-900 mt-8 mb-6 leading-tight;
+}
+
+.prose h2 {
+  @apply text-2xl font-bold text-gray-900 mt-6 mb-4 leading-tight;
+}
+
+.prose h3 {
+  @apply text-xl font-semibold text-gray-900 mt-5 mb-3;
+}
+
+.prose h4 {
+  @apply text-lg font-semibold text-gray-900 mt-4 mb-2;
+}
+
+.prose ul {
+  @apply my-4 ml-6 space-y-2;
+}
+
+.prose ol {
+  @apply my-4 ml-6 space-y-2;
+}
+
+.prose li {
+  @apply text-gray-700 leading-relaxed;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-blue-400 pl-4 py-2 my-6 italic text-gray-600 bg-blue-50;
+}
+
+.prose code {
+  @apply bg-gray-100 px-2 py-1 rounded text-sm font-mono text-gray-800;
+}
+
+.prose pre {
+  @apply bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto my-6;
+}
+
+.prose pre code {
+  @apply bg-transparent px-0 py-0 text-gray-100;
+}
+
+.prose a {
+  @apply text-blue-600 hover:text-blue-800 hover:underline transition-colors;
+}
+
+.prose strong {
+  @apply font-semibold text-gray-900;
+}
+
+.prose em {
+  @apply italic text-gray-700;
+}
+
+.prose img {
+  @apply rounded-lg shadow-md mx-auto my-6;
+}
+
+.prose hr {
+  @apply my-8 border-gray-300;
+}
+
+/* Custom table styles */
+.prose table {
+  @apply w-full border-collapse border border-gray-300 my-6;
+}
+
+.prose th {
+  @apply bg-gray-100 border border-gray-300 px-4 py-2 font-semibold text-left;
+}
+
+.prose td {
+  @apply border border-gray-300 px-4 py-2;
+}
