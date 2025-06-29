@@ -4,7 +4,8 @@ import matter from "gray-matter";
 import Link from "next/link";
 
 export default function BlogPage() {
-  const postsDir = path.join(process.cwd(), "content/posts");
+  // Corrected path to include 'src'
+  const postsDir = path.join(process.cwd(), "src/content/posts");
   const filenames = fs.readdirSync(postsDir);
 
   const posts = filenames.map((filename) => {

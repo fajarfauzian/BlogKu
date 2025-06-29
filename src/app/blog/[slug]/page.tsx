@@ -5,12 +5,14 @@ import { remark } from "remark";
 import html from "remark-html";
 
 export async function generateStaticParams() {
-  const files = fs.readdirSync(path.join(process.cwd(), "content/posts"));
+  // Corrected path to include 'src'
+  const files = fs.readdirSync(path.join(process.cwd(), "src/content/posts"));
   return files.map((filename) => ({ slug: filename.replace(".md", "") }));
 }
 
 export default async function BlogDetailPage({ params }: { params: { slug: string } }) {
-  const filePath = path.join(process.cwd(), "content/posts", `${params.slug}.md`);
+  // Corrected path to include 'src'
+  const filePath = path.join(process.cwd(), "src/content/posts", `${params.slug}.md`);
   const fileContent = fs.readFileSync(filePath, "utf-8");
   const { data, content } = matter(fileContent);
   const processedContent = await remark().use(html).process(content);
