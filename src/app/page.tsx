@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 pt-28">
       <section className="relative overflow-hidden">
         <div className="container mx-auto sm:px-6 lg:px-8 py-20">
           <div className="text-center max-w-4xl mx-auto">

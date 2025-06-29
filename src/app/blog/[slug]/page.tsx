@@ -51,7 +51,7 @@ export default async function BlogDetailPage({ params }: { params: { slug: strin
                 </svg>
               </div>
               <div className="text-left">
-                <p className="font-semibold text-gray-900">BlogKu Author</p>
+                <p className="font-semibold text-gray-900">Fajar Fauzian Author</p>
                 <p className="text-sm text-gray-600">Frontend Developer</p>
               </div>
             </div>
@@ -81,7 +81,7 @@ export default async function BlogDetailPage({ params }: { params: { slug: strin
           </article>
 
           <div className="mt-12">
-            <div className="flex flex-wrap gap-2 mb-8">
+            {/* <div className="flex flex-wrap gap-2 mb-8">
               <span className="px-3 py-1 bg-gradient-to-r from-blue-100 to-purple-100 text-gray-700 rounded-full text-sm font-medium">
                 #frontend
               </span>
@@ -91,9 +91,9 @@ export default async function BlogDetailPage({ params }: { params: { slug: strin
               <span className="px-3 py-1 bg-gradient-to-r from-blue-100 to-purple-100 text-gray-700 rounded-full text-sm font-medium">
                 #tutorial
               </span>
-            </div>
+            </div> */}
 
-            <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-gray-200/50">
+            {/* <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-gray-200/50">
               <h3 className="text-lg font-semibold text-gray-900 mb-4">Bagikan artikel ini</h3>
               <div className="flex space-x-4">
                 <button className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200">
@@ -109,7 +109,7 @@ export default async function BlogDetailPage({ params }: { params: { slug: strin
                   WhatsApp
                 </button>
               </div>
-            </div>
+            </div> */}
           </div> 
         </div>
       </div>
